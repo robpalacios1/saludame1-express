@@ -3,7 +3,7 @@ const app = express();
 
     app.get('/', (req, res) => {
 
-        if(req.query){
+        if(req.query.nombre){
             res.send(`<h1>Hola ${req.query.nombre}! </h1>`)
 
         }else{
